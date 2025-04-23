@@ -9,3 +9,10 @@ tags:
 ---
 
 This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+
+testing for equation
+$$
+E=M c^2
+$$
+
+inline 行内公式 $a=b+c^2$
