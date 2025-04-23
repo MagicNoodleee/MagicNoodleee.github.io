@@ -22,10 +22,10 @@ repository               : "magicnoodleee/magicnoodleee.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "lxcui.png"
   name             : "Lian-Xiang Cui(崔廉相)"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Ph.d student in CSRC."
   location         : "Beijing, China"
   employer         : "Beijing Computational Science Research Center"
   uri              : # URL
