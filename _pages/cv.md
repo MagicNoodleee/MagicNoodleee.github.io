@@ -7,31 +7,32 @@ redirect_from:
   - /resume
 ---
 
+<!-- 可以用类似的方式放一个pdf上去
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+-->
+
 {% include base_path %}
+
+Research Interest
+======
+*	Quantum Reliability Theory and its Application to Quantum Devices
+* Complex System and Nonlinear Dynamics
+* Machine Learning and Reservoir Computing
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Beijing Computational Science Research Center, China, 2025 (expected)
+* B.S. in Jilin University, Jilin, China, 2020
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Exchange student: Aug - Dec 2019
+  * Georgia Institute of Technology, Atlanta, GA, USA
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Bloch chain research internship: Jul - Sep 2018
+  * Hong Kong Applied Science and Technology Research Institute, Hong Kong, China
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+<!--   
 Skills
 ======
 * Skill 1
@@ -39,7 +40,7 @@ Skills
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Skill 3 -->
 
 Publications
 ======
@@ -47,18 +48,18 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
