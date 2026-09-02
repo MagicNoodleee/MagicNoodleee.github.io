@@ -217,16 +217,15 @@ const SITE = {
 
       {
         slug: "reliability-classical-to-quantum",
-        // ★TODO 中文原标题（wuli.iphy.ac.cn 当时打不开，暂用英文；中文模式下会回退显示英文）
         title: { en: "The Scientific Research of Reliability: from Classical to Quantum",
-                 zh: "" },
-        // ★TODO 《物理》，没拿到原文，通讯作者待你确认
-        authors: "Yi-Mu Du, **Lian-Xiang Cui**, Xue-Fei Guan, Chang-Pu Sun",
+                 zh: "可靠性的科学探索：从经典到量子" },
+        authors: "Yi-Mu Du, **Lian-Xiang Cui**, Xue-Fei Guan, Chang-Pu Sun*",
         venue: { en: "Physics (Wuli) 53 (3), 147–156, 2024", zh: "《物理》53 (3), 147–156, 2024" },
         year: 2024,
         badges: [{ en: "Review", zh: "综述" }],
         tldr: null,
-        abstract: "As a measure of a system's ability to function stably, reliability is very important for engineering and technology. In recent years, with the interconnection of physics, information theory and statistics, the research of reliability is gradually developing into a new science. Meanwhile, with the development of quantum technology, quantum devices based on coherence will be greatly embedded in traditional equipment and systems. This not only brings both challenges and opportunities for the research of reliability methodology, but also links reliability engineering with quantum physics and stimulates innovation in the interdisciplinary fields. The first part of this article describes the crossover from reliability engineering to science. In the second part, the basic concepts and logic of quantum reliability are interpreted from a reliability engineering perspective, emphasizing that the consistent quantum theory is a natural language for the statistics of the lifetime of quantum devices. Finally, in conjunction with the primary challenge confronting current cutting-edge quantum technologies, i.e. decoherence, we look forward to the potential applications of reliability engineering in quantum technology.",
+        abstract: { en: "As a measure of a system's ability to function stably, reliability is very important for engineering and technology. In recent years, with the interconnection of physics, information theory and statistics, the research of reliability is gradually developing into a new science. Meanwhile, with the development of quantum technology, quantum devices based on coherence will be greatly embedded in traditional equipment and systems. This not only brings both challenges and opportunities for the research of reliability methodology, but also links reliability engineering with quantum physics and stimulates innovation in the interdisciplinary fields. The first part of this article describes the crossover from reliability engineering to science. In the second part, the basic concepts and logic of quantum reliability are interpreted from a reliability engineering perspective, emphasizing that the consistent quantum theory is a natural language for the statistics of the lifetime of quantum devices. Finally, in conjunction with the primary challenge confronting current cutting-edge quantum technologies, i.e. decoherence, we look forward to the potential applications of reliability engineering in quantum technology.",
+                    zh: "作为设备稳定服役能力的一种衡量，可靠性对工程技术发展和创新十分重要。基于物理、信息论和统计方法的耦合，可靠性研究正逐步发展并有望成为一门新的科学。同时随着量子技术的发展，量子相干器件及设备将会被大量地植入到传统装备系统中。这不仅给可靠性自身的研究带来新的机遇和挑战，也会使量子物理和可靠性研究交叉起来，导致交叉领域思想上的原始创新。文章首先介绍可靠性研究从工程向科学迈进的历程，然后从可靠性工程需求的视角介绍量子可靠性的基本概念和逻辑，强调量子自洽历史对寿命统计的内在描述，最后结合目前量子技术所面临的退相干挑战，展望可靠性工程对量子技术的潜在应用。" },
         links: [
           { label: { en: "Journal", zh: "期刊页" }, url: "https://wuli.iphy.ac.cn/article/doi/10.7693/wl20240301" }
         ],
@@ -349,7 +348,6 @@ const SITE = {
       {
         slug: "blockchain-time-bank",
         title: "Construction of Elderly Mutual Aid Time Bank Based on Blockchain",
-        // ★TODO IEEE MDM，通讯作者待你确认
         authors: "**Lianxiang Cui**, Kehong Yuan, Xiaoyu Zhao, Larry Y. D. Mou",
         venue: "IEEE International Conference on Mobile Data Management (MDM), 462–466, 2019",
         year: 2019,
