@@ -89,7 +89,7 @@
           }).join("") + "</span>";
         }
         // 标题指向本站详情页；没有 slug 的条目退回纯文本
-        var titleHtml = md(t(p.title));
+        var titleHtml = md(t(p.title)) + HP.langSuffix(p.lang);
         if (p.slug) {
           titleHtml = '<a href="paper.html?id=' + encodeURIComponent(p.slug) + '">' +
             titleHtml + "</a>";

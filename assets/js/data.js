@@ -57,7 +57,7 @@ const SITE = {
     interests: [
       { en: "Quantum Reliability",        zh: "量子可靠性" },
       { en: "Complex Systems",            zh: "复杂系统" },
-      { en: "Quantum Information",        zh: "量子信息" },
+      { en: "Statistical Physics",        zh: "统计物理" },
       { en: "Physical Reservoir Computing", zh: "物理储备池计算" }
     ],
 
@@ -230,6 +230,7 @@ const SITE = {
 
       {
         slug: "reliability-classical-to-quantum",
+        lang: "zh",   // 中文写作，英文界面下标题后会显示 (in Chinese)
         title: { en: "The Scientific Research of Reliability: from Classical to Quantum",
                  zh: "可靠性的科学探索：从经典到量子" },
         authors: "DU Yi-Mu, **CUI Lian-Xiang**, GUAN Xue-Fei, SUN Chang-Pu*",
@@ -334,6 +335,7 @@ const SITE = {
 
       {
         slug: "bell-inequality-nobel-2022",
+        lang: "zh",   // 中文写作，英文界面下标题后会显示 (in Chinese)
         title: { en: "Quantum Violation of Bell's Inequality and Its Experimental Test — on the Nobel Prize in Physics 2022",
                  zh: "贝尔不等式的量子违背及其实验检验——兼议2022年诺贝尔物理学奖" },
         authors: "**CUI Lian-Xiang**, XU Kang, ZHANG Peng, SUN Chang-Pu*",

@@ -59,7 +59,7 @@
         return '<span class="badge">' + t(b) + "</span>";
       }).join("") + "</span>";
     }
-    host.appendChild(el("h1", "paper-title", md(t(p.title)) + badges));
+    host.appendChild(el("h1", "paper-title", md(t(p.title)) + HP.langSuffix(p.lang) + badges));
 
     /* 作者 / 出处 */
     if (nonEmpty(p.authors)) host.appendChild(el("div", "paper-authors", HP.authorsHtml(t(p.authors))));

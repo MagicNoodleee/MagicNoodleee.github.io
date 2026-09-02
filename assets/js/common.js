@@ -39,6 +39,13 @@ var HP = (function () {
     return String(t(v)).trim() !== "";
   }
 
+  /* 非英文写作的论文，在英文界面下给标题补一个语种说明 */
+  var LANG_NOTE = { zh: "in Chinese", ja: "in Japanese", de: "in German", fr: "in French" };
+  function langSuffix(code) {
+    if (!code || lang !== "en" || !LANG_NOTE[code]) return "";
+    return ' <span class="title-lang">(' + LANG_NOTE[code] + ")</span>";
+  }
+
   /* 作者串渲染：**加粗** 转粗体，末尾的 * / † 转上标 */
   function authorsHtml(str) {
     return md(str).replace(/([\u2020*]+)/g, "<sup>$1</sup>");
@@ -159,6 +166,7 @@ var HP = (function () {
     store: store, t: t, md: md, el: el, nonEmpty: nonEmpty,
     liveLinks: liveLinks, extAttrs: extAttrs, linkTo: linkTo,
     marksUsed: marksUsed, footnotes: footnotes, authorsHtml: authorsHtml,
+    langSuffix: langSuffix,
     ICON: ICON, applyTheme: applyTheme, navHint: navHint,
     init: init, chrome: chrome,
     lang: function () { return lang; }
