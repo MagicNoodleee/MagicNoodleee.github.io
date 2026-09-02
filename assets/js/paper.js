@@ -71,8 +71,7 @@
       var box = el("div", "paper-links");
       links.forEach(function (l) {
         var a = el("a", null, t(l.label));
-        a.href = l.url;
-        if (/^https?:/.test(l.url)) { a.target = "_blank"; a.rel = "noopener"; }
+        HP.linkTo(a, l.url);
         box.appendChild(a);
       });
       host.appendChild(box);

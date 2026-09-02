@@ -99,8 +99,7 @@
           var box = el("div", "pub-links");
           links.forEach(function (l) {
             var a = el("a", null, t(l.label));
-            a.href = l.url;
-            if (/^https?:/.test(l.url)) { a.target = "_blank"; a.rel = "noopener"; }
+            HP.linkTo(a, l.url);
             box.appendChild(a);
           });
           body.appendChild(box);
@@ -193,8 +192,7 @@
       var lb = el("div", "hero-links");
       valid.forEach(function (l) {
         var a = el("a", null, (ICON[l.icon] || ICON.link) + "<span>" + t(l.label) + "</span>");
-        a.href = l.url;
-        if (/^https?:/.test(l.url)) { a.target = "_blank"; a.rel = "noopener"; }
+        HP.linkTo(a, l.url);
         lb.appendChild(a);
       });
       info.appendChild(lb);

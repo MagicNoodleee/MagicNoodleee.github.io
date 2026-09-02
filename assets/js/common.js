@@ -44,8 +44,19 @@ var HP = (function () {
     return (links || []).filter(function (l) { return l.url && l.url !== "#"; });
   }
 
+  /* 外链、以及本站的 PDF，都开新标签，避免把人带离主页 */
+  function opensNewTab(url) {
+    return /^https?:/.test(url) || /\.pdf($|[?#])/i.test(url);
+  }
+
+  function linkTo(a, url) {
+    a.href = url;
+    if (opensNewTab(url)) { a.target = "_blank"; a.rel = "noopener"; }
+    return a;
+  }
+
   function extAttrs(url) {
-    return /^https?:/.test(url) ? ' target="_blank" rel="noopener"' : "";
+    return opensNewTab(url) ? ' target="_blank" rel="noopener"' : "";
   }
 
   /* ---------- 图标 ---------- */
@@ -120,7 +131,7 @@ var HP = (function () {
 
   return {
     store: store, t: t, md: md, el: el, nonEmpty: nonEmpty,
-    liveLinks: liveLinks, extAttrs: extAttrs,
+    liveLinks: liveLinks, extAttrs: extAttrs, linkTo: linkTo,
     ICON: ICON, applyTheme: applyTheme, navHint: navHint,
     init: init, chrome: chrome,
     lang: function () { return lang; }

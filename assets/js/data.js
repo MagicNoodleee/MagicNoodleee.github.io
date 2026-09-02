@@ -245,16 +245,23 @@ const SITE = {
         slug: "esrel-2024-quantum-networks",
         title: "Quantum Reliability and Its Application in Quantum Networks",
         authors: "**Lian-Xiang Cui**",
-        venue: { en: "European Safety and Reliability Conference (ESREL 2024)", zh: "欧洲安全与可靠性会议（ESREL 2024）" },
+        venue: { en: "ESREL 2024, Collection of Extended Abstracts, 155–156",
+                 zh: "ESREL 2024 扩展摘要集, 155–156" },
         year: 2024,
-        badges: [{ en: "Conference Talk", zh: "会议报告" }],
-        tldr: null,
-        abstract: "",
-        links: [],
+        badges: [{ en: "Extended Abstract", zh: "扩展摘要" }],
+        tldr: { en: "A reliability-assessment model of a quantum network: EPR-pair channels with entanglement purification as the redundancy mechanism.",
+                zh: "量子网络的可靠性评估模型：以纠缠纯化作为冗余机制的 EPR 对信道。" },
+        // 这是扩展摘要，本身没有单独的 Abstract 段。下面用的是原文结尾的总结段（你自己写的），
+        // 想换成投稿时的摘要直接替换即可。
+        abstract: "Illustrated by the quantum network, we show how quantum reliability theory can analyze the reliability loss governed by quantum dynamics instead of classical stochastic process. Quantum reliability establishing a solid groundwork for analyzing the reliability of quantum devices. In future quantum engineering applications, quantum reliability will serve as a vital measure, enabling the evaluation and optimization of quantum devices' design. As this captivating journey unfolds, the alliance between quantum reliability and cutting-edge quantum technologies will shape a future of unparalleled reliability and innovation.",
+        links: [
+          { label: "PDF", url: "assets/files/Cui-ESREL2024-quantum-reliability.pdf" }
+        ],
         bibtex: String.raw`@inproceedings{cui2024quantum,
   title     = {Quantum Reliability and Its Application in Quantum Networks},
   author    = {Cui, Lian-Xiang},
-  booktitle = {Proceedings of the European Safety and Reliability Conference (ESREL 2024)},
+  booktitle = {Advances in Reliability, Safety and Security: ESREL 2024 Collection of Extended Abstracts},
+  pages     = {155--156},
   year      = {2024}
 }`
       },
