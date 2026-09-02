@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="placeholder portrait">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9eeed"/>
+      <stop offset="1" stop-color="#d5dedd"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g)"/>
+  <circle cx="200" cy="158" r="62" fill="#a9b8b6"/>
+  <path d="M76 400c0-72 55-124 124-124s124 52 124 124z" fill="#a9b8b6"/>
+  <text x="200" y="378" font-family="Georgia, serif" font-size="19" fill="#5f7a77" text-anchor="middle">replace me</text>
+</svg>
