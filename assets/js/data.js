@@ -90,6 +90,9 @@ const SITE = {
       { date: "2026-03",
         text: { en: "New preprint: <i>Optimal Memory Encoding Through Fluctuation-Response Structure</i> is on arXiv.",
                 zh: "新预印本 <i>Optimal Memory Encoding Through Fluctuation-Response Structure</i> 已上传 arXiv。" } },
+      { date: "2026-03",
+        text: { en: "Received the <b>Excellent Poster Award</b> at the Workshop of the Mechanism on Brain and Mind (JNNS).",
+                zh: "在「脑与心智的机制」研讨会（日本神经网络学会）获<b>优秀海报奖</b>。" } },
       { date: "2025-01",
         text: { en: "Paper on quantum reliability and systematic errors in quantum sensing published in <b>Journal of Reliability Science and Engineering</b>.",
                 zh: "关于量子传感中系统误差的论文发表于 <b>Journal of Reliability Science and Engineering</b>。" } },
@@ -288,6 +291,10 @@ const SITE = {
   awards: {
     label: { en: "Awards & Honors", zh: "获奖荣誉" },
     items: [
+      { year: "2026",
+        text: { en: "<b>Excellent Poster Award</b>, Workshop of the Mechanism on Brain and Mind, Japanese Neural Network Society (JNNS)",
+                zh: "<b>优秀海报奖</b>，「脑与心智的机制」研讨会，日本神经网络学会（JNNS）" } }
+      // 再加就照上面的格式往下写：
       // { year: "2024", text: { en: "Some Award", zh: "某某奖" } }
     ]
   },
