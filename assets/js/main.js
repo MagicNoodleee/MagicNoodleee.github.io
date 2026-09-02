@@ -135,7 +135,15 @@
             return '<span class="badge">' + t(b) + "</span>";
           }).join("") + "</span>";
         }
-        body.appendChild(el("div", "pub-title", md(t(p.title)) + badges));
+        // 标题指向第一个有效链接（links 里的第一条），没有链接就是纯文本
+        var primary = (p.links || []).filter(function (l) { return l.url && l.url !== "#"; })[0];
+        var titleHtml = md(t(p.title));
+        if (primary) {
+          titleHtml = '<a href="' + primary.url + '"' +
+            (/^https?:/.test(primary.url) ? ' target="_blank" rel="noopener"' : '') +
+            '>' + titleHtml + "</a>";
+        }
+        body.appendChild(el("div", "pub-title", titleHtml + badges));
         if (nonEmpty(p.authors)) body.appendChild(el("div", "pub-authors", md(t(p.authors))));
         if (nonEmpty(p.venue))   body.appendChild(el("div", "pub-venue", t(p.venue)));
         if (nonEmpty(p.tldr))    body.appendChild(el("div", "pub-tldr", md(t(p.tldr))));
