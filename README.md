@@ -5,15 +5,31 @@
 ## 目录说明
 
 ```
-index.html              页面骨架 + SEO 信息（改一次就够）
+index.html              主页骨架 + SEO 信息（改一次就够）
+paper.html              论文详情页模板，一个文件服务所有论文
 assets/
-  css/style.css         样式（想换主题色改第 9 行的 --accent）
+  css/style.css         样式（想换主题色改 --accent）
   js/data.js         ★  你的所有内容都在这里，日常只改这个文件
-  js/main.js            渲染逻辑，不用动
-  img/                  头像、论文配图、favicon
+  js/common.js          双语/主题/图标等共用工具，不用动
+  js/main.js            主页渲染，不用动
+  js/paper.js           详情页渲染，不用动
+  img/                  头像、favicon
   files/                CV PDF 等文件放这里
 .nojekyll               告诉 GitHub Pages 不要用 Jekyll 处理
 ```
+
+## 论文详情页
+
+每篇论文有独立地址 `paper.html?id=<slug>`，例如
+`magicnoodleee.github.io/paper.html?id=quantum-reliability`。
+
+**不需要为每篇论文单独建 HTML 文件** —— `paper.html` 是一个模板，按地址栏里的
+`id` 从 `data.js` 取对应那篇来渲染。加一篇论文 = 在 `data.js` 里加一个对象，
+详情页自动就有了。
+
+详情页包含：标题、作者、出处、各种链接、摘要、BibTeX（带一键复制）、上一篇/下一篇。
+
+`slug` 就是地址里的 id。**改 slug 会让已经分享出去的旧链接失效**，定了就别动。
 
 ## 本地预览
 
@@ -47,7 +63,8 @@ git add -A && git commit -m "update" && git push
 
 ## 日常维护
 
-**加一篇论文** — 打开 `assets/js/data.js`，在 `publications.items` 数组最前面复制粘贴一个 `{...}` 块，改内容即可。年份会自动分组排序。
+**加一篇论文** — 打开 `assets/js/data.js`，在 `publications.items` 数组最前面复制粘贴一个 `{...}` 块，改内容即可。年份会自动分组排序，详情页自动生成。
+记得给它一个没被用过的 `slug`。
 
 **换头像** — 把照片放进 `assets/img/`，改 `profile.photo` 的路径。
 
@@ -67,6 +84,7 @@ git add -A && git commit -m "update" && git push
 - 打印样式：Cmd+P 直接导出成一份还算能看的 CV
 - 空模块自动隐藏，导航栏自动生成
 - 滚动时导航高亮当前章节
+- 每篇论文的独立详情页（摘要 + BibTeX 一键复制 + 前后翻页）
 
 ## 注意
 
