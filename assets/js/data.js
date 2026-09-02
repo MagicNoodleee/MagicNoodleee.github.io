@@ -109,7 +109,7 @@ const SITE = {
    * ---------------------------------------------------------------------- */
   publications: {
     label: { en: "Publications", zh: "论文发表" },
-    note: { en: "", zh: "" },
+    note: { en: "* Corresponding author.", zh: "* 通讯作者。" },
     groupByYear: true,
 
     /* slug     = 详情页地址 paper.html?id=<slug>，改了会让旧链接失效，尽量别动
@@ -120,7 +120,7 @@ const SITE = {
       {
         slug: "optimal-memory-encoding",
         title: "Optimal Memory Encoding Through Fluctuation-Response Structure",
-        authors: "**Lianxiang Cui**, Kohei Nakajima, Kazuyuki Aihara",
+        authors: "**Lianxiang Cui***, Kohei Nakajima, Kazuyuki Aihara",
         venue: { en: "arXiv preprint arXiv:2603.21666", zh: "arXiv 预印本 arXiv:2603.21666" },
         year: 2026,
         badges: ["Preprint"],
@@ -142,7 +142,7 @@ const SITE = {
       {
         slug: "capacity-time-tradeoff",
         title: "Capacity-Time Trade-off in Highly Reliable Quantum Memory",
-        authors: "Miao-Miao Yi, **Lian-Xiang Cui**, Yi-Mu Du, Chang-Pu Sun",
+        authors: "Miao-Miao Yi, **Lian-Xiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
         venue: "Physical Review A 113 (6), 062613, 2026",
         year: 2026,
         badges: [],
@@ -169,7 +169,7 @@ const SITE = {
       {
         slug: "quantum-reliability-sensing",
         title: "On Quantum Reliability Characterizing Systematic Errors in Quantum Sensing",
-        authors: "**Lian-Xiang Cui**, Yi-Mu Du, Chang-Pu Sun",
+        authors: "**Lian-Xiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
         venue: "Journal of Reliability Science and Engineering 1 (1), 015004, 2025",
         year: 2025,
         badges: [],
@@ -196,7 +196,7 @@ const SITE = {
         slug: "quantum-vicsek",
         // 注意：arXiv 最新版标题已改为 "Quantum Analog of..."，Google Scholar 上还是旧的 "Quantum Vicsek Model"
         title: "Quantum Analog of Vicsek Model for Active Matter",
-        authors: "Hong Yuan, **Lian-Xiang Cui**, Letian Chen, Chang-Pu Sun",
+        authors: "Hong Yuan, **Lian-Xiang Cui**, Letian Chen, Chang-Pu Sun*",
         venue: { en: "arXiv preprint arXiv:2407.09860", zh: "arXiv 预印本 arXiv:2407.09860" },
         year: 2024,
         badges: ["Preprint"],
@@ -220,6 +220,7 @@ const SITE = {
         // ★TODO 中文原标题（wuli.iphy.ac.cn 当时打不开，暂用英文；中文模式下会回退显示英文）
         title: { en: "The Scientific Research of Reliability: from Classical to Quantum",
                  zh: "" },
+        // ★TODO 《物理》，没拿到原文，通讯作者待你确认
         authors: "Yi-Mu Du, **Lian-Xiang Cui**, Xue-Fei Guan, Chang-Pu Sun",
         venue: { en: "Physics (Wuli) 53 (3), 147–156, 2024", zh: "《物理》53 (3), 147–156, 2024" },
         year: 2024,
@@ -269,7 +270,7 @@ const SITE = {
       {
         slug: "quantum-reliability",
         title: "Quantum Reliability",
-        authors: "**Lian-Xiang Cui**, Yi-Mu Du, Chang-Pu Sun",
+        authors: "**Lian-Xiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
         venue: "Physical Review Letters 131 (16), 160203, 2023",
         year: 2023,
         badges: [],
@@ -296,7 +297,7 @@ const SITE = {
       {
         slug: "system-reliability-time-varying",
         title: "On System Reliability for Time-Varying Structure",
-        authors: "**Lian-Xiang Cui**, Yi-Mu Du, Chang-Pu Sun",
+        authors: "**Lian-Xiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
         venue: "Reliability Engineering & System Safety 234, 109146, 2023",
         year: 2023,
         badges: [],
@@ -323,6 +324,7 @@ const SITE = {
         // ★TODO 中文原标题（wuli.iphy.ac.cn 当时打不开，暂用英文；中文模式下会回退显示英文）
         title: { en: "Quantum Violation of Bell's Inequality and Its Experimental Test — on the Nobel Prize in Physics 2022",
                  zh: "" },
+        // ★TODO 《物理》，没拿到原文，通讯作者待你确认
         authors: "**Lian-Xiang Cui**, Kang Xu, Peng Zhang, Chang-Pu Sun",
         venue: { en: "Physics (Wuli) 52 (1), 1–17, 2023", zh: "《物理》52 (1), 1–17, 2023" },
         year: 2023,
@@ -347,6 +349,7 @@ const SITE = {
       {
         slug: "blockchain-time-bank",
         title: "Construction of Elderly Mutual Aid Time Bank Based on Blockchain",
+        // ★TODO IEEE MDM，通讯作者待你确认
         authors: "**Lianxiang Cui**, Kehong Yuan, Xiaoyu Zhao, Larry Y. D. Mou",
         venue: "IEEE International Conference on Mobile Data Management (MDM), 462–466, 2019",
         year: 2019,

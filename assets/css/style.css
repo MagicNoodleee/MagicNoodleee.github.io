@@ -407,6 +407,8 @@ b, strong { color: var(--text-strong); font-weight: 650; }
 .paper-authors strong { color: var(--text-strong); font-weight: 650; }
 .paper-venue { font-size: .94rem; font-style: italic; color: var(--text); }
 
+.paper-note { font-size: .8rem; color: var(--faint); margin-top: 8px; }
+
 .paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .paper-links a {
   font-size: .8rem; font-weight: 600; letter-spacing: .02em;

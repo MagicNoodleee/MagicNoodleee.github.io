@@ -65,6 +65,12 @@
     if (nonEmpty(p.authors)) host.appendChild(el("div", "paper-authors", md(t(p.authors))));
     if (nonEmpty(p.venue))   host.appendChild(el("div", "paper-venue", t(p.venue)));
 
+    /* 这篇标了通讯作者才显示脚注（去掉 **加粗** 后仍含 * 即为标了） */
+    var note = SITE.publications.note;
+    if (nonEmpty(note) && /\*/.test(String(t(p.authors)).replace(/\*\*(.+?)\*\*/g, "$1"))) {
+      host.appendChild(el("div", "paper-note", t(note)));
+    }
+
     /* 链接按钮 */
     var links = HP.liveLinks(p.links);
     if (links.length) {
