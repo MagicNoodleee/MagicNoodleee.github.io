@@ -288,6 +288,7 @@ const SITE = {
    * ---------------------------------------------------------------------- */
   awards: {
     label: { en: "Awards & Honors", zh: "获奖荣誉" },
+    navLabel: { en: "Awards", zh: "获奖" },   // 导航栏用短的，正文标题仍用 label
     items: [
       { year: "2026",
         text: { en: "<b>Excellent Poster Award</b>, Workshop of the Mechanism on Brain and Mind, Japanese Neural Network Society (JNNS)",

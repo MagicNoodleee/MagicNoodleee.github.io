@@ -294,7 +294,15 @@
     document.title = name + (base ? " —" + base : "");
 
     spy();
+    navHint();
   }
+
+  /* ---------- 导航装不下时显示淡出提示 ---------- */
+  function navHint() {
+    var n = document.getElementById("nav");
+    n.classList.toggle("is-scrollable", n.scrollWidth > n.clientWidth + 1);
+  }
+  window.addEventListener("resize", navHint);
 
   /* ---------- 导航高亮 ---------- */
   var obs = null;

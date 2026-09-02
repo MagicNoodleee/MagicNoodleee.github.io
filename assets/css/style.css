@@ -122,10 +122,16 @@ b, strong { color: var(--text-strong); font-weight: 650; }
 
 .topbar-nav {
   display: flex; gap: 16px; margin-left: auto;
-  min-width: 0; overflow-x: auto;
+  flex: 0 1 auto; min-width: 0;
+  overflow-x: auto; overscroll-behavior-x: contain;
   scrollbar-width: none; -ms-overflow-style: none;
 }
 .topbar-nav::-webkit-scrollbar { display: none; }
+/* 装不下时右缘淡出，提示还能横向滑动（由 JS 加 is-scrollable） */
+.topbar-nav.is-scrollable {
+  -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 22px), transparent 100%);
+          mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 22px), transparent 100%);
+}
 .topbar-nav a {
   color: var(--muted); font-size: .82rem; letter-spacing: .02em;
   white-space: nowrap; padding: 2px 0;
@@ -145,9 +151,10 @@ b, strong { color: var(--text-strong); font-weight: 650; }
 .tool:hover { background: var(--accent-soft); color: var(--accent); border-color: var(--border-soft); }
 .tool svg { width: 16px; height: 16px; }
 
-@media (max-width: 1000px) {
-  .topbar-nav { display: none; }
-  .topbar-tools { margin-left: auto; }
+@media (max-width: 620px) {
+  .topbar-name { display: none; }      /* 很窄时把空间全让给导航 */
+  .topbar-nav { margin-left: 0; gap: 13px; }
+  .topbar-inner { gap: 12px; }
 }
 
 /* ---------- hero ---------------------------------------------------------- */
