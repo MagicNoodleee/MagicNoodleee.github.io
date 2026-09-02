@@ -131,7 +131,7 @@ const SITE = {
         authors: "**Lianxiang Cui***, Kohei Nakajima, Kazuyuki Aihara",
         venue: { en: "arXiv preprint arXiv:2603.21666", zh: "arXiv 预印本 arXiv:2603.21666" },
         year: 2026,
-        badges: ["Preprint"],
+        badges: [{ en: "Preprint", zh: "预印本" }],
         tldr: { en: "Optimal input encoding in physical reservoir computing is a geometric problem set by the system's fluctuation–response structure.",
                 zh: "物理储备池计算中的最优输入编码是一个几何问题，由系统的涨落—响应结构决定。" },
         abstract: "Physical reservoir computing exploits the intrinsic dynamics of physical systems for information processing, while keeping the internal dynamics fixed and training only linear readouts; yet the role of input encoding remains poorly understood. We show that optimal input encoding is a geometric problem governed by the system's fluctuation-response structure. By measuring steady-state fluctuations and linear response, we derive an analytical criterion for the input direction that maximizes task-specific linear memory under a fixed power constraint, termed Response-based Optimal Memory Encoding (ROME). Backpropagation-based encoder optimization is shown to be equivalent to ROME, revealing a trade-off between task-dependent feature mixing and intrinsic noise. We apply ROME to various reservoir platforms, including spin-wave waveguides and spiking neural networks, demonstrating effective encoder design across physical and neuromorphic reservoirs, even in non-differentiable systems.",
@@ -207,7 +207,7 @@ const SITE = {
         authors: "Hong Yuan, **Lian-Xiang Cui**, Letian Chen, Chang-Pu Sun*",
         venue: { en: "arXiv preprint arXiv:2407.09860", zh: "arXiv 预印本 arXiv:2407.09860" },
         year: 2024,
-        badges: ["Preprint"],
+        badges: [{ en: "Preprint", zh: "预印本" }],
         tldr: { en: "An overdamped spin-1/2 ensemble whose spontaneous magnetization produces flocking; reduces to Vicsek in the classical limit.",
                 zh: "过阻尼自旋 1/2 系综的自发磁化诱导集群有序相，经典极限下退化为 Vicsek 模型。" },
         abstract: "We propose a quantum model consisting of an ensemble of overdamped spin$-1/2$ particles with ferromagnetic couplings, driven by a radially homogeneous magnetic field. The spontaneous magnetization of the spin components breaks the $SO(3)$ (or $SO(2)$) symmetry, inducing an ordered phase of flocking. Our model converges to the Vicsek model in the classical limit and corresponds to the Toner-Tu model in the continuous limit. Our investigation not only elucidates the intrinsic connection between these two models, but also introduces new opportunities for exploring the mechanisms underlying flocking order and correlations at the quantum level, which maybe pave the way for a new field of research -- the quantum active matter.",
@@ -235,7 +235,8 @@ const SITE = {
         abstract: { en: "As a measure of a system's ability to function stably, reliability is very important for engineering and technology. In recent years, with the interconnection of physics, information theory and statistics, the research of reliability is gradually developing into a new science. Meanwhile, with the development of quantum technology, quantum devices based on coherence will be greatly embedded in traditional equipment and systems. This not only brings both challenges and opportunities for the research of reliability methodology, but also links reliability engineering with quantum physics and stimulates innovation in the interdisciplinary fields. The first part of this article describes the crossover from reliability engineering to science. In the second part, the basic concepts and logic of quantum reliability are interpreted from a reliability engineering perspective, emphasizing that the consistent quantum theory is a natural language for the statistics of the lifetime of quantum devices. Finally, in conjunction with the primary challenge confronting current cutting-edge quantum technologies, i.e. decoherence, we look forward to the potential applications of reliability engineering in quantum technology.",
                     zh: "作为设备稳定服役能力的一种衡量，可靠性对工程技术发展和创新十分重要。基于物理、信息论和统计方法的耦合，可靠性研究正逐步发展并有望成为一门新的科学。同时随着量子技术的发展，量子相干器件及设备将会被大量地植入到传统装备系统中。这不仅给可靠性自身的研究带来新的机遇和挑战，也会使量子物理和可靠性研究交叉起来，导致交叉领域思想上的原始创新。文章首先介绍可靠性研究从工程向科学迈进的历程，然后从可靠性工程需求的视角介绍量子可靠性的基本概念和逻辑，强调量子自洽历史对寿命统计的内在描述，最后结合目前量子技术所面临的退相干挑战，展望可靠性工程对量子技术的潜在应用。" },
         links: [
-          { label: { en: "Journal", zh: "期刊页" }, url: "https://wuli.iphy.ac.cn/article/doi/10.7693/wl20240301" }
+          { label: { en: "Journal", zh: "期刊页" }, url: "https://wuli.iphy.ac.cn/article/doi/10.7693/wl20240301" },
+          { label: "PDF", url: "assets/files/Du-Wuli2024-reliability.pdf" }
         ],
         bibtex: String.raw`@article{du2024scientific,
   title   = {The scientific research of reliability: from classical to quantum},
@@ -328,18 +329,18 @@ const SITE = {
 
       {
         slug: "bell-inequality-nobel-2022",
-        // ★TODO 中文原标题（wuli.iphy.ac.cn 当时打不开，暂用英文；中文模式下会回退显示英文）
         title: { en: "Quantum Violation of Bell's Inequality and Its Experimental Test — on the Nobel Prize in Physics 2022",
-                 zh: "" },
-        // ★TODO 《物理》，没拿到原文，通讯作者待你确认
-        authors: "**Lian-Xiang Cui**, Kang Xu, Peng Zhang, Chang-Pu Sun",
+                 zh: "贝尔不等式的量子违背及其实验检验——兼议2022年诺贝尔物理学奖" },
+        authors: "**Lian-Xiang Cui**, Kang Xu, Peng Zhang, Chang-Pu Sun*",
         venue: { en: "Physics (Wuli) 52 (1), 1–17, 2023", zh: "《物理》52 (1), 1–17, 2023" },
         year: 2023,
-        badges: [{ en: "Review", zh: "综述" }],
+        badges: [{ en: "Invited Article", zh: "特约专稿" }],
         tldr: null,
-        abstract: "The Nobel Prize in Physics 2022 was awarded to Alain Aspect, John F. Clauser and Anton Zeilinger, for experiments with entangled photons, establishing the violation of Bell inequalities and pioneering quantum information science. Bell's inequality plays an indispensable role in the foundations of quantum mechanics and quantum information; its violation directly reveals the nonlocal nature of quantum mechanics.",
+        abstract: { en: "The Nobel Prize in Physics 2022 was awarded to Alain Aspect, John F. Clauser and Anton Zeilinger, for experiments with entangled photons, establishing the violation of Bell inequalities and pioneering quantum information science. Bell's inequality plays an indispensable role in the foundations of quantum mechanics and quantum information; its violation directly reveals the nonlocal nature of quantum mechanics.",
+                    zh: "2022年诺贝尔物理学奖授予法国、美国和奥地利的三位科学家阿兰·阿斯佩、约翰·弗朗西斯·克劳泽和安东·塞林格，以表彰他们利用纠缠光子实验检验贝尔不等式以及在开拓量子信息科学方面做出的卓越贡献。贝尔不等式在量子力学基本问题和量子信息研究中都有着不可或缺的地位，它的违背直接揭示了量子力学的基本特征——量子非定域性。文章在讲清楚基本科学概念的基础上，简要介绍了贝尔不等式理论的建立及验证其违背的实验研究的科学历程。为了解决EPR佯谬，基于玻姆的定域隐变量理论，约翰·贝尔提出了关于纠缠态上的关联测量满足的基本不等式——贝尔不等式。他还发现，量子力学关于关联的计算结果违背贝尔不等式，可以在类空距离上展现出“鬼魅”的长程量子关联。这种长程关联看似有超光速的“超距作用”，但这只是人们明显或潜在地使用了“波包塌缩假设”。EPR文章明显地采用这个假设推断远方客体共存的物理实在要素，由此对量子力学完备性提出质疑。文章评述了阿斯佩、克劳泽和塞林格荣获诺贝尔物理学奖的关于贝尔不等式违背的判定性实验，介绍了华人物理学家在纠缠态和贝尔不等式研究方面的基础性贡献，包括早年吴健雄利用正负电子湮灭产生EPR光子的先驱性实验，李政道和杨振宁关于产生两个中性K介子K⁰—K̄⁰形成EPR态的建议，史砚华、欧泽宇、彭堃墀等利用非线性光学晶体，包括陈创天等人发现的非线性光学晶体，产生纠缠光子对的原创性工作。" },
         links: [
-          { label: { en: "Journal", zh: "期刊页" }, url: "https://wuli.iphy.ac.cn/article/doi/10.7693/wl20230101" }
+          { label: { en: "Journal", zh: "期刊页" }, url: "https://wuli.iphy.ac.cn/article/doi/10.7693/wl20230101" },
+          { label: "PDF", url: "assets/files/Cui-Wuli2023-bell-inequality.pdf" }
         ],
         bibtex: String.raw`@article{cui2023bell,
   title   = {Quantum violation of Bell's inequality and its experimental test---on the Nobel Prize in Physics 2022},
