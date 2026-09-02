@@ -26,8 +26,7 @@ const SITE = {
       // { en: "Aihara Laboratory", zh: "合原实验室" }
     ],
 
-    // ★TODO 把你的照片放进 assets/img/（Scholar 上那张就很好），然后改这里的文件名
-    photo: "assets/img/avatar.svg",
+    photo: "assets/img/avatar.jpg",
 
     links: [
       { icon: "mail",     label: "Email",          url: "mailto:lxcui@g.ecc.u-tokyo.ac.jp" },
