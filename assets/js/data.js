@@ -288,8 +288,6 @@ const SITE = {
 
       {
         slug: "system-reliability-time-varying",
-        // ★TODO 摘要来自 Google Scholar，原文被它截断了，我切到了最后一个完整句子。
-        //       你手上有原稿，建议直接粘贴完整摘要替换。
         title: "On System Reliability for Time-Varying Structure",
         authors: "**Lian-Xiang Cui**, Yi-Mu Du, Chang-Pu Sun",
         venue: "Reliability Engineering & System Safety 234, 109146, 2023",
@@ -297,7 +295,7 @@ const SITE = {
         badges: [],
         tldr: { en: "Aging of multi-state systems when the structure function itself varies with time.",
                 zh: "当结构函数本身随时间变化时，多状态系统的老化行为。" },
-        abstract: "In reliability theory, the aging of a multi-state system is dominated by both the components and the corresponding structure functions. In previous studies, structures are usually assumed to be static, and thus the time-independent structure functions are utilized. However, due to the complex nature of aging, the structure could also vary with time, which may lead to unsatisfactory assessment reliability with the static structure-based analysis. The current investigation provides a universal approach to assessing the reliability of complex systems with time-varying structures. An open-system model is introduced to broaden the logic method of the system reliability. The analysis of open-system model implies that structure functions are probabilistically described by the time-varying structure distributions, which are the fine graining of the conditional probabilistic tables (CPTs) of the Bayesian networks.",
+        abstract: "In reliability theory, the aging of a multi-state system is dominated by both the components and the corresponding structure functions. In previous studies, structures are usually assumed to be static, and thus the time-independent structure functions are utilized. However, due to the complex nature of aging, the structure could also vary with time, which may lead to unsatisfactory assessment reliability with the static structure-based analysis. The current investigation provides a universal approach to assessing the reliability of complex systems with time-varying structures. An open-system model is introduced to broaden the logic method of the system reliability. The analysis of open-system model implies that structure functions are probabilistically described by the time-varying structure distributions, which are the fine graining of the conditional probabilistic tables (CPTs) of the Bayesian networks. The aging of components and the time-varying structures are integrated into a probabilistic graphical model together, which is put forth to assess the time-varying reliability of complex systems. A general algorithm based on expectation–maximization (EM) for various dynamic processes for components and system structures is obtained. Two specific processes, e.g., Markov and Weibull, are studied in detail. Three examples are presented to illustrate the proposed approach and give a deeper understanding of time-varying structures.",
         links: [
           { label: { en: "Journal", zh: "期刊页" }, url: "https://www.sciencedirect.com/science/article/pii/S0951832023000613" }
         ],
