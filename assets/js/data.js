@@ -30,8 +30,7 @@ const SITE = {
     photo: "assets/img/avatar.svg",
 
     links: [
-      // ★TODO 填上你的邮箱（Scholar 显示认证域名是 g.ecc.u-tokyo.ac.jp）
-      { icon: "mail",     label: "Email",          url: "#" },
+      { icon: "mail",     label: "Email",          url: "mailto:lxcui@g.ecc.u-tokyo.ac.jp" },
       { icon: "scholar",  label: "Google Scholar", url: "https://scholar.google.com/citations?user=N9KJH88AAAAJ" },
       { icon: "github",   label: "GitHub",         url: "https://github.com/MagicNoodleee" },
       // 下面几个填上真实地址就会自动显示，留 "#" 则隐藏
