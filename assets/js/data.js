@@ -109,7 +109,15 @@ const SITE = {
    * ---------------------------------------------------------------------- */
   publications: {
     label: { en: "Publications", zh: "论文发表" },
-    note: { en: "* Corresponding author.", zh: "* 通讯作者。" },
+    /* 作者串里的标记（写在名字后面即可，会自动出现对应脚注；没用到的脚注不显示）
+         *  通讯作者      例：Yi-Mu Du*, Chang-Pu Sun*
+         †  同等贡献      例：**Lian-Xiang Cui**†, Co-First Author†
+       自己的名字用 **两个星号** 包住加粗，和上面两个标记可以叠加，
+       例如你既是共同一作又是通讯：**Lian-Xiang Cui**†*                        */
+    notes: {
+      corresponding: { en: "* Corresponding author.",          zh: "* 通讯作者。" },
+      equal:         { en: "† Equal contribution.",            zh: "† 同等贡献。" }
+    },
     groupByYear: true,
 
     /* slug     = 详情页地址 paper.html?id=<slug>，改了会让旧链接失效，尽量别动

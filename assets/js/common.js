@@ -39,6 +39,32 @@ var HP = (function () {
     return String(t(v)).trim() !== "";
   }
 
+  /* 作者串渲染：**加粗** 转粗体，末尾的 * / † 转上标 */
+  function authorsHtml(str) {
+    return md(str).replace(/([\u2020*]+)/g, "<sup>$1</sup>");
+  }
+
+  /* 作者串里用了哪些标记（先去掉 **加粗** 免得误判） */
+  function marksUsed(authors) {
+    var plain = String(authors || "").replace(/\*\*(.+?)\*\*/g, "$1");
+    return { corr: plain.indexOf("*") >= 0, equal: plain.indexOf("\u2020") >= 0 };
+  }
+
+  /* 把用到的脚注按顺序取出来；一个都没用到就返回空数组 */
+  function footnotes(notes, authorStrings) {
+    var any = { corr: false, equal: false };
+    (authorStrings || []).forEach(function (a) {
+      var m = marksUsed(a);
+      if (m.corr) any.corr = true;
+      if (m.equal) any.equal = true;
+    });
+    var out = [];
+    if (!notes) return out;
+    if (any.equal && nonEmpty(notes.equal)) out.push(t(notes.equal));
+    if (any.corr  && nonEmpty(notes.corresponding)) out.push(t(notes.corresponding));
+    return out;
+  }
+
   /* url 为空或 "#" 视为未填写，不渲染 */
   function liveLinks(links) {
     return (links || []).filter(function (l) { return l.url && l.url !== "#"; });
@@ -132,6 +158,7 @@ var HP = (function () {
   return {
     store: store, t: t, md: md, el: el, nonEmpty: nonEmpty,
     liveLinks: liveLinks, extAttrs: extAttrs, linkTo: linkTo,
+    marksUsed: marksUsed, footnotes: footnotes, authorsHtml: authorsHtml,
     ICON: ICON, applyTheme: applyTheme, navHint: navHint,
     init: init, chrome: chrome,
     lang: function () { return lang; }

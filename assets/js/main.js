@@ -53,7 +53,12 @@
     publications: function (d) {
       if (!nonEmpty(d.items)) return null;
       var f = document.createDocumentFragment();
-      if (nonEmpty(d.note)) f.appendChild(el("p", "pubnote", t(d.note)));
+      var fn = HP.footnotes(d.notes, (d.items || []).map(function (x) { return t(x.authors); }));
+      if (fn.length) {
+        f.appendChild(el("p", "pubnote", fn.map(function (x) {
+          return '<span class="fn">' + x + "</span>";
+        }).join("")));
+      }
 
       var items = d.items.slice().sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
       var lastYear = null;
@@ -90,7 +95,7 @@
             titleHtml + "</a>";
         }
         body.appendChild(el("div", "pub-title", titleHtml + badges));
-        if (nonEmpty(p.authors)) body.appendChild(el("div", "pub-authors", md(t(p.authors))));
+        if (nonEmpty(p.authors)) body.appendChild(el("div", "pub-authors", HP.authorsHtml(t(p.authors))));
         if (nonEmpty(p.venue))   body.appendChild(el("div", "pub-venue", t(p.venue)));
         if (nonEmpty(p.tldr))    body.appendChild(el("div", "pub-tldr", md(t(p.tldr))));
 

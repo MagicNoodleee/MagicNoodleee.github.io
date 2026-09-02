@@ -269,6 +269,10 @@ b, strong { color: var(--text-strong); font-weight: 650; }
 /* ---------- publications -------------------------------------------------- */
 
 .pubnote { color: var(--faint); font-size: .82rem; margin: -12px 0 20px; }
+.pubnote .fn, .paper-note .fn { display: inline-block; margin-right: 16px; }
+
+/* 作者名后的 * / † 标记：上标但不撑高行距 */
+.pub-authors sup, .paper-authors sup { font-size: .74em; line-height: 0; }
 
 .yearhead {
   display: flex; align-items: center; gap: 12px;

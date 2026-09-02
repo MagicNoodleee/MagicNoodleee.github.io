@@ -62,13 +62,15 @@
     host.appendChild(el("h1", "paper-title", md(t(p.title)) + badges));
 
     /* 作者 / 出处 */
-    if (nonEmpty(p.authors)) host.appendChild(el("div", "paper-authors", md(t(p.authors))));
+    if (nonEmpty(p.authors)) host.appendChild(el("div", "paper-authors", HP.authorsHtml(t(p.authors))));
     if (nonEmpty(p.venue))   host.appendChild(el("div", "paper-venue", t(p.venue)));
 
-    /* 这篇标了通讯作者才显示脚注（去掉 **加粗** 后仍含 * 即为标了） */
-    var note = SITE.publications.note;
-    if (nonEmpty(note) && /\*/.test(String(t(p.authors)).replace(/\*\*(.+?)\*\*/g, "$1"))) {
-      host.appendChild(el("div", "paper-note", t(note)));
+    /* 只显示这篇实际用到的脚注 */
+    var fn = HP.footnotes(SITE.publications.notes, [t(p.authors)]);
+    if (fn.length) {
+      host.appendChild(el("div", "paper-note", fn.map(function (x) {
+        return '<span class="fn">' + x + "</span>";
+      }).join("")));
     }
 
     /* 链接按钮 */
