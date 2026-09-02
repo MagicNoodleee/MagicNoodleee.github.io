@@ -16,8 +16,7 @@ const SITE = {
   profile: {
     name: { en: "Lian-Xiang Cui", zh: "崔廉相" },
 
-    // ★TODO 确认你的职称：Ph.D. Student / Postdoctoral Researcher / Project Researcher …
-    title: { en: "Ph.D. Student", zh: "博士研究生" },
+    title: { en: "Project Researcher (Postdoc)", zh: "特任研究员（博士后）" },
 
     affiliation: [
       { en: "International Research Center for Neurointelligence (IRCN)",
@@ -67,8 +66,8 @@ const SITE = {
     // ★TODO 这段是我根据你论文摘要写的，请按自己的口径修改
     bio: [
       {
-        en: "I am at the <b>International Research Center for Neurointelligence (IRCN)</b>, The University of Tokyo. My work sits at the interface of quantum physics, reliability theory, and complex systems. I introduced <b>quantum reliability</b> as a metric for how coherent devices degrade, and used it to characterize systematic errors in quantum sensing and the capacity–time trade-off in quantum memory.",
-        zh: "我目前在<b>东京大学国际神经智能研究中心（IRCN）</b>从事研究。我的工作处在量子物理、可靠性理论与复杂系统的交叉地带：提出用<b>量子可靠性</b>刻画相干器件的退化过程，并以此分析量子传感中的系统误差、以及量子存储中的容量—时间权衡。"
+        en: "I am a postdoctoral researcher at the <b>International Research Center for Neurointelligence (IRCN)</b>, The University of Tokyo. My work sits at the interface of quantum physics, reliability theory, and complex systems. I introduced <b>quantum reliability</b> as a metric for how coherent devices degrade, and used it to characterize systematic errors in quantum sensing and the capacity–time trade-off in quantum memory.",
+        zh: "我目前在<b>东京大学国际神经智能研究中心（IRCN）</b>做博士后研究。我的工作处在量子物理、可靠性理论与复杂系统的交叉地带：提出用<b>量子可靠性</b>刻画相干器件的退化过程，并以此分析量子传感中的系统误差、以及量子存储中的容量—时间权衡。"
       },
       {
         en: "More recently I have been studying how physical systems encode and retain information — showing that optimal input encoding in physical reservoir computing is a geometric problem governed by the system's fluctuation–response structure.",
