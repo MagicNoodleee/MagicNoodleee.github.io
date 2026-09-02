@@ -346,10 +346,8 @@ const SITE = {
 
       {
         slug: "blockchain-time-bank",
-        // ★TODO Google Scholar 把第四作者记成了 "YD Larry"，明显是抓取错乱，我没敢改。
-        //       正确写法请自行修正（authors 和下面 bibtex 里各一处）。
         title: "Construction of Elderly Mutual Aid Time Bank Based on Blockchain",
-        authors: "**Lianxiang Cui**, Kehong Yuan, Xiaoyu Zhao, YD Larry",
+        authors: "**Lianxiang Cui**, Kehong Yuan, Xiaoyu Zhao, Larry Y. D. Mou",
         venue: "IEEE International Conference on Mobile Data Management (MDM), 462–466, 2019",
         year: 2019,
         badges: [],
@@ -360,11 +358,12 @@ const SITE = {
         ],
         bibtex: String.raw`@inproceedings{cui2019construction,
   title        = {Construction of elderly mutual aid time bank based on blockchain},
-  author       = {Cui, Lianxiang and Yuan, Kehong and Zhao, Xiaoyu and Larry, Y. D.},
+  author       = {Cui, Lianxiang and Yuan, Kehong and Zhao, Xiaoyu and Mou, Larry Y. D.},
   booktitle    = {2019 20th IEEE International Conference on Mobile Data Management (MDM)},
   pages        = {462--466},
   year         = {2019},
-  organization = {IEEE}
+  organization = {IEEE},
+  doi          = {10.1109/MDM.2019.000-1}
 }`
       }
 
