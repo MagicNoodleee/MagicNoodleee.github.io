@@ -109,7 +109,12 @@ const SITE = {
    * ---------------------------------------------------------------------- */
   publications: {
     label: { en: "Publications", zh: "论文发表" },
-    /* 作者串里的标记（写在名字后面即可，会自动出现对应脚注；没用到的脚注不显示）
+    /* 【作者名的规则】列表和 BibTeX 里的作者名一律按各篇论文实际印的写法，
+       不要统一成一种拼法 —— 同一个人在 PRL 上是 "L. X. Cui"，在《物理》上是
+       "CUI Lian-Xiang"，在 arXiv 上是 "Lianxiang Cui"，照抄即可。
+       主页自己的名字（profile.name）才用统一的 Lianxiang Cui。
+
+       作者串里的标记（写在名字后面即可，会自动出现对应脚注；没用到的脚注不显示）
          *  通讯作者      例：Yi-Mu Du*, Chang-Pu Sun*
          †  同等贡献      例：**Lianxiang Cui**†, Co-First Author†
        自己的名字用 **两个星号** 包住加粗，和上面两个标记可以叠加，
@@ -150,7 +155,7 @@ const SITE = {
       {
         slug: "capacity-time-tradeoff",
         title: "Capacity-Time Trade-off in Highly Reliable Quantum Memory",
-        authors: "Miao-Miao Yi, **Lianxiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
+        authors: "Miao-Miao Yi, **L. X. Cui**, Y-M. Du*, C. P. Sun*",
         venue: "Physical Review A 113 (6), 062613, 2026",
         year: 2026,
         badges: [],
@@ -163,7 +168,7 @@ const SITE = {
         ],
         bibtex: String.raw`@article{yi2026capacity,
   title     = {Capacity-time trade-off in highly reliable quantum memory},
-  author    = {Yi, Miao-Miao and Cui, Lian-Xiang and Du, Yi-Mu and Sun, Chang-Pu},
+  author    = {Yi, Miao-Miao and Cui, L. X. and Du, Y-M. and Sun, C. P.},
   journal   = {Physical Review A},
   volume    = {113},
   number    = {6},
@@ -177,7 +182,7 @@ const SITE = {
       {
         slug: "quantum-reliability-sensing",
         title: "On Quantum Reliability Characterizing Systematic Errors in Quantum Sensing",
-        authors: "**Lianxiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
+        authors: "**Lian-Xiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
         venue: "Journal of Reliability Science and Engineering 1 (1), 015004, 2025",
         year: 2025,
         badges: [],
@@ -204,7 +209,7 @@ const SITE = {
         slug: "quantum-vicsek",
         // 注意：arXiv 最新版标题已改为 "Quantum Analog of..."，Google Scholar 上还是旧的 "Quantum Vicsek Model"
         title: "Quantum Analog of Vicsek Model for Active Matter",
-        authors: "Hong Yuan, **Lianxiang Cui**, Letian Chen, Chang-Pu Sun*",
+        authors: "Hong Yuan, **L.X. Cui**, L.T. Chen, C.P. Sun*",
         venue: { en: "arXiv preprint arXiv:2407.09860", zh: "arXiv 预印本 arXiv:2407.09860" },
         year: 2024,
         badges: [{ en: "Preprint", zh: "预印本" }],
@@ -217,7 +222,7 @@ const SITE = {
         ],
         bibtex: String.raw`@article{yuan2024quantum,
   title   = {Quantum Analog of Vicsek Model for Active Matter},
-  author  = {Yuan, Hong and Cui, Lian-Xiang and Chen, Letian and Sun, Chang-Pu},
+  author  = {Yuan, Hong and Cui, L. X. and Chen, L. T. and Sun, C. P.},
   journal = {arXiv preprint arXiv:2407.09860},
   year    = {2024}
 }`
@@ -227,7 +232,7 @@ const SITE = {
         slug: "reliability-classical-to-quantum",
         title: { en: "The Scientific Research of Reliability: from Classical to Quantum",
                  zh: "可靠性的科学探索：从经典到量子" },
-        authors: "Yi-Mu Du, **Lianxiang Cui**, Xue-Fei Guan, Chang-Pu Sun*",
+        authors: "DU Yi-Mu, **CUI Lian-Xiang**, GUAN Xue-Fei, SUN Chang-Pu*",
         venue: { en: "Physics (Wuli) 53 (3), 147–156, 2024", zh: "《物理》53 (3), 147–156, 2024" },
         year: 2024,
         badges: [{ en: "Review", zh: "综述" }],
@@ -253,7 +258,7 @@ const SITE = {
       {
         slug: "esrel-2024-quantum-networks",
         title: "Quantum Reliability and Its Application in Quantum Networks",
-        authors: "**Lianxiang Cui**",
+        authors: "**Lian-Xiang Cui**",
         venue: { en: "ESREL 2024, Collection of Extended Abstracts, 155–156",
                  zh: "ESREL 2024 扩展摘要集, 155–156" },
         year: 2024,
@@ -278,7 +283,7 @@ const SITE = {
       {
         slug: "quantum-reliability",
         title: "Quantum Reliability",
-        authors: "**Lianxiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
+        authors: "**L. X. Cui**, Y-M. Du*, C. P. Sun*",
         venue: "Physical Review Letters 131 (16), 160203, 2023",
         year: 2023,
         badges: [],
@@ -291,7 +296,7 @@ const SITE = {
         ],
         bibtex: String.raw`@article{cui2023quantum,
   title     = {Quantum Reliability},
-  author    = {Cui, Lian-Xiang and Du, Yi-Mu and Sun, Chang-Pu},
+  author    = {Cui, L. X. and Du, Y-M. and Sun, C. P.},
   journal   = {Physical Review Letters},
   volume    = {131},
   number    = {16},
@@ -305,7 +310,7 @@ const SITE = {
       {
         slug: "system-reliability-time-varying",
         title: "On System Reliability for Time-Varying Structure",
-        authors: "**Lianxiang Cui**, Yi-Mu Du*, Chang-Pu Sun*",
+        authors: "**L.X. Cui**, Yi-Mu Du*, C.P. Sun*",
         venue: "Reliability Engineering & System Safety 234, 109146, 2023",
         year: 2023,
         badges: [],
@@ -317,7 +322,7 @@ const SITE = {
         ],
         bibtex: String.raw`@article{cui2023system,
   title     = {On system reliability for time-varying structure},
-  author    = {Cui, Lian-Xiang and Du, Yi-Mu and Sun, Chang-Pu},
+  author    = {Cui, L.X. and Du, Yi-Mu and Sun, C.P.},
   journal   = {Reliability Engineering \& System Safety},
   volume    = {234},
   pages     = {109146},
@@ -331,7 +336,7 @@ const SITE = {
         slug: "bell-inequality-nobel-2022",
         title: { en: "Quantum Violation of Bell's Inequality and Its Experimental Test — on the Nobel Prize in Physics 2022",
                  zh: "贝尔不等式的量子违背及其实验检验——兼议2022年诺贝尔物理学奖" },
-        authors: "**Lianxiang Cui**, Kang Xu, Peng Zhang, Chang-Pu Sun*",
+        authors: "**CUI Lian-Xiang**, XU Kang, ZHANG Peng, SUN Chang-Pu*",
         venue: { en: "Physics (Wuli) 52 (1), 1–17, 2023", zh: "《物理》52 (1), 1–17, 2023" },
         year: 2023,
         badges: [{ en: "Invited Article", zh: "特约专稿" }],
