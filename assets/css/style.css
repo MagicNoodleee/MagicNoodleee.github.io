@@ -478,16 +478,21 @@ b, strong { color: var(--text-strong); font-weight: 650; }
 .paper-pager .pager-next { text-align: right; margin-left: auto; }
 .pager-dir { display: block; font-size: .74rem; color: var(--faint); margin-bottom: 3px; }
 .pager-t {
-  display: block; font-size: .88rem; line-height: 1.4;
+  font-size: .88rem; line-height: 1.4;
   color: var(--muted);
+  /* 限制行数，长标题不会把两栏撑高 */
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .paper-pager a:hover .pager-t { color: var(--accent); }
 
 @media (max-width: 620px) {
   .paper-title { font-size: 1.42rem; }
-  .paper-pager { flex-direction: column; gap: 18px; }
-  .paper-pager a { max-width: 100%; }
-  .paper-pager .pager-next { text-align: left; margin-left: 0; }
+  /* 手机上依然左右两栏，靠收紧间距和多截一行来腾空间 */
+  .paper-pager { gap: 14px; }
+  .paper-pager a { max-width: 48%; }
+  .pager-dir { font-size: .7rem; }
+  .pager-t { font-size: .8rem; -webkit-line-clamp: 4; }
 }
 
 /* ---------- print (turns the page into a passable one-page CV) ------------ */
