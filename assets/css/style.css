@@ -154,6 +154,7 @@ b, strong { color: var(--text-strong); font-weight: 650; }
 @media (max-width: 620px) {
   .topbar-name { display: none; }      /* 很窄时把空间全让给导航 */
   .topbar-nav { margin-left: 0; gap: 13px; }
+  .topbar-tools { margin-left: auto; }  /* 把语言/主题按钮顶到右边缘 */
   .topbar-inner { gap: 12px; }
 }
 
