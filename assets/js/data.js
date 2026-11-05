@@ -61,15 +61,18 @@ const SITE = {
       { en: "Physical Reservoir Computing", zh: "物理储备池计算" }
     ],
 
-    // ★TODO 这段是我根据你论文摘要写的，请按自己的口径修改
     bio: [
       {
-        en: "I am a postdoctoral researcher at the <b>International Research Center for Neurointelligence (IRCN)</b>, The University of Tokyo. My work sits at the interface of quantum physics, reliability theory, and complex systems. I introduced <b>quantum reliability</b> as a metric for how coherent devices degrade, and used it to characterize systematic errors in quantum sensing and the capacity–time trade-off in quantum memory.",
-        zh: "我目前在<b>东京大学国际神经智能研究中心（IRCN）</b>做博士后研究。我的工作处在量子物理、可靠性理论与复杂系统的交叉地带：提出用<b>量子可靠性</b>刻画相干器件的退化过程，并以此分析量子传感中的系统误差、以及量子存储中的容量—时间权衡。"
+        en: "My research lies at the intersection of statistical physics, quantum physics, and complex systems, with two main focuses: <b>Physics of Information Processing and Computation</b> and <b>Reliability of Complex and Quantum Systems</b>.",
+        zh: "我的研究处在统计物理、量子物理与复杂系统的交叉地带，主要围绕两个方向：<b>信息处理与计算的物理</b>，以及<b>复杂系统与量子系统的可靠性</b>。"
       },
       {
-        en: "More recently I have been studying how physical systems encode and retain information — showing that optimal input encoding in physical reservoir computing is a geometric problem governed by the system's fluctuation–response structure.",
-        zh: "近期我关注物理系统如何编码与保持信息，指出物理储备池计算中的最优输入编码本质上是一个几何问题，由系统的涨落—响应结构所决定。"
+        en: "In physical reservoir computing, I investigate how dynamical response, nonequilibrium processes, and quantum effects shape information processing, memory, and computational capabilities, with connections to neural and biological systems. In reliability theory, I study the fundamental principles governing the reliability of classical and quantum systems, including the development and applications of quantum reliability theory.",
+        zh: "在物理储备池计算方面，我研究动力学响应、非平衡过程和量子效应如何塑造系统的信息处理、记忆与计算能力，并关注其与神经及生物系统的联系。在可靠性理论方面，我研究支配经典与量子系统可靠性的基本原理，包括量子可靠性理论的发展及其应用。"
+      },
+      {
+        en: "My broader goal is to uncover the physical principles underlying computation, information processing, and reliability in complex systems.",
+        zh: "我更长远的目标，是揭示复杂系统中计算、信息处理与可靠性背后的物理原理。"
       }
     ]
   },
