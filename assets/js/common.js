@@ -46,9 +46,12 @@ var HP = (function () {
     return ' <span class="title-lang">(' + LANG_NOTE[code] + ")</span>";
   }
 
-  /* 作者串渲染：**加粗** 转粗体，末尾的 * / † 转上标 */
+  /* 作者串渲染：**加粗** 转粗体，* / † 转上标。
+     紧跟在加粗名字后面的标记会被收进 <strong> 里，这样自己是通讯作者时星号也是粗的。 */
   function authorsHtml(str) {
-    return md(str).replace(/([\u2020*]+)/g, "<sup>$1</sup>");
+    return md(str).replace(/(<\/strong>)?([\u2020*]+)/g, function (m, close, marks) {
+      return close ? "<sup>" + marks + "</sup></strong>" : "<sup>" + marks + "</sup>";
+    });
   }
 
   /* 作者串里用了哪些标记（先去掉 **加粗** 免得误判） */
