@@ -85,6 +85,9 @@ const SITE = {
     label: { en: "News", zh: "动态" },
     max: 4,
     items: [
+      { date: "2026-11",
+        text: { en: "New paper on the probabilistic geometry of reliability\u2013safety trade-offs accepted in <b>Journal of Reliability Science and Engineering</b>.",
+                zh: "\u5173\u4e8e\u53ef\u9760\u6027\u2014\u5b89\u5168\u6027\u6743\u8861\u6982\u7387\u51e0\u4f55\u7684\u8bba\u6587\u88ab <b>Journal of Reliability Science and Engineering</b> \u63a5\u6536\u3002" } },
       { date: "2026-06",
         text: { en: "Our paper on the capacity–time trade-off in highly reliable quantum memory is published in <b>Physical Review A</b>.",
                 zh: "关于高可靠量子存储中容量—时间权衡的论文发表于 <b>Physical Review A</b>。" } },
@@ -132,6 +135,31 @@ const SITE = {
        abstract = 详情页显示的摘要（英文；想要中文写成 { en:..., zh:... } 也行）
        bibtex   = 详情页的引用块，用 String.raw`` 包住，反斜杠不会被转义    */
     items: [
+
+      {
+        slug: "reliability-safety-tradeoffs",
+        title: "Probabilistic Geometry of Reliability\u2013Safety Trade-offs",
+        authors: "Yi-Mu Du, **Lian-Xiang Cui**, Chang-Pu Sun*",
+        venue: { en: "Journal of Reliability Science and Engineering (in press), 2026",
+                 zh: "Journal of Reliability Science and Engineering\uff08\u5df2\u63a5\u6536\uff09, 2026" },
+        year: 2026,
+        badges: [{ en: "In Press", zh: "\u5df2\u63a5\u6536" }],
+        tldr: { en: "Casts the reliability\u2013safety relation as constrained optimization over probability measures: a convex set of admissible distributions gives a convex reachable region whose boundary is set by extreme distributions.",
+                zh: "\u628a\u53ef\u9760\u6027\u2014\u5b89\u5168\u6027\u5173\u7cfb\u8868\u8ff0\u4e3a\u6982\u7387\u6d4b\u5ea6\u4e0a\u7684\u7ea6\u675f\u4f18\u5316\uff1a\u5bb9\u8bb8\u5206\u5e03\u96c6\u4e3a\u51f8\u65f6\uff0c\u53ef\u8fbe\u533a\u57df\u4e5f\u662f\u51f8\u7684\uff0c\u5176\u8fb9\u754c\u7531\u6781\u7aef\u5206\u5e03\u51b3\u5b9a\u3002" },
+        abstract: "Reliability and safety are two fundamental metrics for complex engineered systems. Reliability quantifies the probability that a system performs its intended function under prescribed conditions and inputs, whereas safety quantifies the probability that it avoids unacceptable consequences under erroneous inputs, disturbances, environmental fluctuations, or off-design use. Although the two concepts are distinct, they are closely related. Earlier studies have therefore often focused on only one of them or their common ground, which is reasonable for mature engineering systems. However, for emerging technologies whose reliability and safety boundaries remain unclear, both of them must be considered simultaneously. Establishing a unified framework that quantifies their distinction and overlap is thus an important problem in reliability science. Here we formulate the reliability–safety relation as a constrained optimization problem over probability measures. We first introduce a general probabilistic model and show that, whenever the admissible set of probability distributions is convex, the reachable reliability–safety region is also convex and its boundary is determined by extreme distributions. We then use an explosive as a representative example and analyze the reliability–safety trade-off in a binary-event model. To expose the physical origin of the trade-off, we further construct a reaction–thermal-dissipation model of explosive initiation and use the critical condition for reaction–thermal feedback to constrain the reachable region. Finally, we discuss the connection between, and the different roles of, the probabilistic and physical models.",
+        links: [
+          { label: { en: "Journal", zh: "\u671f\u520a\u9875" }, url: "https://iopscience.iop.org/article/10.1088/3050-2454/aec0a4" },
+          { label: "PDF", url: "https://iopscience.iop.org/article/10.1088/3050-2454/aec0a4/pdf" }
+        ],
+        bibtex: String.raw`@article{du2026probabilistic,
+  title   = {Probabilistic Geometry of Reliability--Safety Trade-offs},
+  author  = {Du, Yi-Mu and Cui, Lian-Xiang and Sun, Chang-Pu},
+  journal = {Journal of Reliability Science and Engineering},
+  year    = {2026},
+  note    = {In press},
+  doi     = {10.1088/3050-2454/aec0a4}
+}`
+      },
 
       {
         slug: "optimal-memory-encoding",
@@ -475,7 +503,7 @@ const SITE = {
    *  11. 页脚
    * ---------------------------------------------------------------------- */
   footer: {
-    text: { en: "Last updated: September 2026.", zh: "最后更新：2026 年 9 月。" },
+    text: { en: "Last updated: November 2026.", zh: "最后更新：2026 年 11 月。" },
     showCredit: true
   }
 
