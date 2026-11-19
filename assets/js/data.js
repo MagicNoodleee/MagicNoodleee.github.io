@@ -86,6 +86,9 @@ const SITE = {
     max: 4,
     items: [
       { date: "2026-11",
+        text: { en: "New preprint: <i>Topological Quantum Reservoir Computing</i> is on arXiv.",
+                zh: "\u65b0\u9884\u5370\u672c <i>Topological Quantum Reservoir Computing</i> \u5df2\u4e0a\u4f20 arXiv\u3002" } },
+      { date: "2026-11",
         text: { en: "New paper on the probabilistic geometry of reliability\u2013safety trade-offs accepted in <b>Journal of Reliability Science and Engineering</b>.",
                 zh: "\u5173\u4e8e\u53ef\u9760\u6027\u2014\u5b89\u5168\u6027\u6743\u8861\u6982\u7387\u51e0\u4f55\u7684\u8bba\u6587\u88ab <b>Journal of Reliability Science and Engineering</b> \u63a5\u6536\u3002" } },
       { date: "2026-06",
@@ -135,6 +138,28 @@ const SITE = {
        abstract = 详情页显示的摘要（英文；想要中文写成 { en:..., zh:... } 也行）
        bibtex   = 详情页的引用块，用 String.raw`` 包住，反斜杠不会被转义    */
     items: [
+
+      {
+        slug: "topological-quantum-reservoir",
+        title: "Topological Quantum Reservoir Computing",
+        authors: "Zhi-Lei Zhang, **Lianxiang Cui***, C. P. Sun, Kohei Nakajima, Kazuyuki Aihara",
+        venue: { en: "arXiv preprint arXiv:2611.24013", zh: "arXiv \u9884\u5370\u672c arXiv:2611.24013" },
+        year: 2026,
+        badges: [{ en: "Preprint", zh: "\u9884\u5370\u672c" }],
+        tldr: { en: "A Kitaev chain whose long-lived Majorana edge modes hold protected memory while its fast bulk dynamics do the processing, making topology a resource for quantum reservoir computing.",
+                zh: "用 Kitaev 链中长寿命的马约拉纳边缘模做受保护的存储、体态的快速响应做信息处理，把拓扑变成量子储备池计算的一种资源。" },
+        abstract: "Scaling universal quantum computation and implementing quantum machine learning with protected logical qubits remain challenging. To harness the computational potential of existing fault-tolerant quantum platforms, we introduce topological quantum reservoir computing, a novel approach using protected degrees of freedom for storage and the host system's intrinsic dynamics for information processing. Using a one-dimensional Kitaev chain, we show how long-lived Majorana edge modes and fast bulk responses support these complementary functions within the same many-body system. We identify the tradeoffs governing access to protected memory and show how matched interfaces enable programmable writing and interactions enable autonomous information consolidation from the bulk to the edge. These mechanisms improve performance on tasks requiring long-term retention of temporal information. Our results establish topology as a new resource for quantum reservoir computing and open a route toward near-term quantum computing and quantum machine learning.",
+        links: [
+          { label: "arXiv", url: "https://arxiv.org/abs/2611.24013" },
+          { label: "PDF", url: "https://arxiv.org/pdf/2611.24013" }
+        ],
+        bibtex: String.raw`@article{zhang2026topological,
+  title   = {Topological Quantum Reservoir Computing},
+  author  = {Zhang, Zhi-Lei and Cui, Lianxiang and Sun, C. P. and Nakajima, Kohei and Aihara, Kazuyuki},
+  journal = {arXiv preprint arXiv:2611.24013},
+  year    = {2026}
+}`
+      },
 
       {
         slug: "reliability-safety-tradeoffs",
