@@ -55,24 +55,24 @@ const SITE = {
     label: { en: "About", zh: "关于" },
 
     interests: [
-      { en: "Quantum Reliability",        zh: "量子可靠性" },
-      { en: "Complex Systems",            zh: "复杂系统" },
-      { en: "Statistical Physics",        zh: "统计物理" },
-      { en: "Physical Reservoir Computing", zh: "物理储备池计算" }
+      { en: "Statistical Physics", zh: "统计物理" },
+      { en: "Complex and Living Systems", zh: "复杂系统与生命系统" },
+      { en: "Physical Reservoir Computing", zh: "物理储备池计算" },
+      { en: "Quantum Reliability", zh: "量子可靠性" }
     ],
 
     bio: [
       {
-        en: "My research lies at the intersection of statistical physics, quantum physics, and complex systems, with two main focuses: <b>Physics of Information Processing and Computation</b> and <b>Reliability of Complex and Quantum Systems</b>.",
-        zh: "我的研究处在统计物理、量子物理与复杂系统的交叉地带，主要围绕两个方向：<b>信息处理与计算的物理</b>，以及<b>复杂系统与量子系统的可靠性</b>。"
+        en: "I use statistical physics to understand how complex systems — living, neural, and physical alike — organize collectively, process information, and give rise to computation.",
+        zh: "我用统计物理研究复杂系统——生命的、神经的、物理的——如何集体组织、处理信息，并由此产生计算。"
       },
       {
-        en: "In physical reservoir computing, I investigate how dynamical response, nonequilibrium processes, and quantum effects shape information processing, memory, and computational capabilities, with connections to neural and biological systems. In reliability theory, I study the fundamental principles governing the reliability of classical and quantum systems, including the development and applications of quantum reliability theory.",
-        zh: "在物理储备池计算方面，我研究动力学响应、非平衡过程和量子效应如何塑造系统的信息处理、记忆与计算能力，并关注其与神经及生物系统的联系。在可靠性理论方面，我研究支配经典与量子系统可靠性的基本原理，包括量子可靠性理论的发展及其应用。"
+        en: "Much of my current work is on the <b>physics of learning and computation</b>: how dynamical response, nonequilibrium processes, and quantum effects shape a system’s memory and computational capability, in physical and quantum reservoir computing. Alongside this I study <b>collective behavior in complex and living systems</b>, from active matter to biological dynamics.",
+        zh: "目前的工作主要在<b>学习与计算的物理</b>：在物理与量子储备池计算中，动力学响应、非平衡过程与量子效应如何决定一个系统的记忆与计算能力。与此并行，我研究<b>复杂系统与生命系统中的集体行为</b>，从活性物质到生物动力学。"
       },
       {
-        en: "My broader goal is to uncover the physical principles underlying computation, information processing, and reliability in complex systems.",
-        zh: "我更长远的目标，是揭示复杂系统中计算、信息处理与可靠性背后的物理原理。"
+        en: "A longer-running line of my work is <b>reliability theory</b>, where I introduced quantum reliability as a metric for how coherent devices degrade and used it to characterize systematic errors in quantum sensing and the limits of quantum memory. Across all of it I am after the same thing: the physical principles behind computation, information processing, and reliability in complex systems.",
+        zh: "另一条开始得更早的线索是<b>可靠性理论</b>：我提出用量子可靠性刻画相干器件的退化，并以此分析量子传感中的系统误差与量子存储的极限。这些工作指向同一个问题：复杂系统中计算、信息处理与可靠性背后的物理原理。"
       }
     ]
   },
